@@ -1,0 +1,218 @@
+/* Base */
+@font-face {
+    font-family: mainFont;
+    src: url(../src/NicoMoji-Regular.ttf);
+}
+  
+.font-main {
+    font-family: mainFont;
+}
+
+body,html{
+    overflow-x: hidden;
+    max-width: 100% !important;
+    color: #b3b3b3;
+    font-family: "Poppins", sans-serif;
+}
+
+/* TopNavigation */
+.topNav{
+    border-radius: 0 0 35px 35px;
+}
+
+/* BG BLACK */
+.bg-black{
+    background-color: #000;
+}
+
+.text-black{
+    color: #000;
+}
+
+/* BG MAIN ( YELLOW ) */
+.bg-main{
+    background-color: #E8DF00;
+}
+
+.text-main{
+    color: #E8DF00;
+}
+
+/* BG LIGHT */
+.bg-second{
+    background-color: #D9D9D9;
+}
+
+.text-second{
+    color: #D9D9D9;
+}
+
+
+/* Background Images */
+.bg-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-3{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* Tyre-Prints bar */
+.tyre-prints-bar{
+    position: relative;
+    overflow: hidden;
+    height: 37px;
+}
+
+.tyre-prints-main{
+    background: repeating-linear-gradient(
+        -45deg,
+        #000000,
+        #151515 7px,
+        #E8DF00 20px,
+        #E8DF00 40px
+    );
+}
+
+.tyre-prints-dark{
+    -webkit-box-shadow: inset 0px 0px 20px 30px rgba(0, 0, 0, 0.9); 
+    box-shadow: inset 0px 0px 20px 30px rgba(0, 0, 0, 0.9);
+    background: repeating-linear-gradient(
+        -45deg,
+        #000000,
+        #000000 20px,
+        #070707 20px,
+        #040404 50px
+    );
+    background-attachment: fixed;
+}
+
+.tyre-prints{
+    position: absolute;
+    background-color: black;
+    height: 200%;
+    top: -50%;
+    width: 15px;
+    transform: rotate(40deg);
+}
+
+.tyre-prints:nth-of-type(1){
+    right: 16px;
+}
+
+.tyre-prints:nth-of-type(2){
+    right: 56px;
+}
+
+.tyre-prints:nth-of-type(3){
+    right: 96px;
+}
+
+/* Headers */
+h1,h2,h3,h4,h5{
+    font-size: 3.3em;
+}
+
+/* Z-Index */
+.z-0{
+    z-index: 0;
+}
+
+.z-1{
+    z-index: 1;
+}
+
+/* Other Images */
+.spec-img{
+    position: absolute;
+}
+
+/* ROTATION 2deg effect */
+.rotated{
+    transform: rotate(-2deg);
+}
+
+/* ContactForm */
+#contactForm .form-control{
+    transition: all .2s linear;
+}
+
+#contactForm .form-control:focus{
+    box-shadow: none !important;
+    border-color: #E8DF00 !important;
+    color: #E8DF00 !important;
+}
+
+#contactForm .form-control:focus::placeholder{
+    box-shadow: none !important;
+    border-color: #E8DF00 !important;
+    color: #E8DF00 !important;
+}
+
+#contactForm button[type="submit"]:hover{
+    background-color: transparent;
+    color: #E8DF00;
+}
+
+/* Custom BreakPoints */
+@media only screen and (max-width: 768px) {
+    .tyre-prints-dark{
+        -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.9); 
+        box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.9);
+    }
+
+    .spec-img{
+        position: relative;
+    }
+
+    h1,h2,h3{
+        font-size: 2.5em;
+    }
+  }
+
+@media only screen and (max-width: 340px){
+    h1,h2,h3{
+        font-size: 2em !important;
+    }
+}
+
+/* REST */
+.text-muted.btn:hover{
+    color: #E8DF00 !important;
+}
+
+.round-icon{
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid;
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+.round-icon:hover{
+    color: #E8DF00;
+}
+
+::selection {
+    color: #000;
+    background: #E8DF00;
+  }
+
+body::-webkit-scrollbar{
+    appearance: none;
+}
+
+body::-webkit-scrollbar-track{
+    appearance: none;
+    background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #E8DF00;
+}

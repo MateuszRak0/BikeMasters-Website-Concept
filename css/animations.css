@@ -1,0 +1,68 @@
+/* BASE */
+.animator{
+    animation-play-state: paused;
+}
+
+.animator.active{
+    animation-play-state: running;
+}
+
+
+/* Fly From Top */
+.animator-flyTop{
+    animation-name: animatorFrames-flyTop;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    transform: translateY(-100%);
+}
+
+@keyframes animatorFrames-flyTop{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+
+}
+
+/* Fly From Left */
+
+.animator-flyLeft{
+    animation-name: animatorFrames-flyLeft;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+
+@keyframes animatorFrames-flyLeft{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+
+/* Highlight text */
+.animator-highlight{
+    animation-name: animatorFrames-highlight;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+}
+
+@keyframes animatorFrames-highlight {
+    100%{
+        color: #E8DF00;
+    }
+}
