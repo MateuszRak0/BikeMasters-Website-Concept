@@ -20,7 +20,7 @@ body,html{
     border-radius: 0 0 35px 35px;
 }
 
-/* BG BLACK */
+/* Colors */
 .bg-black{
     background-color: #000;
 }
@@ -29,7 +29,6 @@ body,html{
     color: #000;
 }
 
-/* BG MAIN ( YELLOW ) */
 .bg-main{
     background-color: #E8DF00;
 }
@@ -38,7 +37,6 @@ body,html{
     color: #E8DF00;
 }
 
-/* BG LIGHT */
 .bg-second{
     background-color: #D9D9D9;
 }
@@ -47,18 +45,20 @@ body,html{
     color: #D9D9D9;
 }
 
-
-/* Background Images */
-.bg-img{
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Colors in inputs */
+a.text-main:hover{
+    color: #D9D9D9 !important;
 }
 
-.bg-img-3{
+.btn:focus{
+    box-shadow: none !important;
+}
+
+/* Backgrounds */
+.bg-1{
     background-color: rgba(0, 0, 0, 0.95);
 }
 
-/* Tyre-Prints bar */
 .tyre-prints-bar{
     position: relative;
     overflow: hidden;
